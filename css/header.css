@@ -1,0 +1,100 @@
+.header {
+    color: var(--second-text-color);
+    display: flex;
+    justify-content: space-between;
+}
+.header__left {
+    color: var(--main-accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.header__left-title {
+    padding: 15px;
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--main-accent-color);
+    border-right: var(--first-text-color) solid 1px;
+}
+.header__left-span {
+    color: var(--second-text-color);
+}
+.header__left-menu {
+}
+.menu {
+    color: var(--first-text-color);
+    display: none;
+    margin: 0;
+    padding: 0px;
+    font-size: 14px;
+}
+.menu__item {
+    justify-content: center;
+    align-items: center;
+    padding: 16px 10px 13px 10px;
+    border-bottom: solid 3px white;
+}
+.menu__item-active {
+    background-color: var(--first-text-color);
+    color: var(--second-text-color);
+}
+.menu__item:hover {
+    padding: 16px 10px 13px 10px;
+    border-bottom: solid 3px var(--main-accent-color);
+    color: black;
+}
+.planning-cycle {
+    border-bottom: solid 3px var(--main-accent-color);
+    background-color: var(--hover-background-color);
+    color: black;
+}
+.menu__item-link {
+    display: flex;
+
+}
+.menu__item-logo {
+    width: 20px;
+    padding: 0 5px;
+}
+.menu__item-img {
+}
+.menu__img {
+}
+.header__right {
+    padding: 15px 10px 13px 10px;
+    min-width: 142px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__right-icon {
+    font-size: 12px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 60px;
+    border: solid 1px var(--main-accent-color);
+    background-color: var(--hover-background-color);
+}
+.header__right-name {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__right-arrow {
+    padding: 5px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.arrow__img {
+}
+.mystyle {
+    background-color: aqua;
+}
+

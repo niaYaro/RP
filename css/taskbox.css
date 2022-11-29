@@ -1,0 +1,200 @@
+.taskbox {
+    /* display: none; */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+}
+.main__taskbox {
+    background-color: white;
+    margin: 10px;
+    max-width: 280px;
+    min-width: 210px;
+}
+.main__taskbox-progress {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.main__taskbox-progressline {
+}
+.line {
+    border-top: solid 4px var(--progress-color);
+
+}
+.line-one {
+}
+.line-two {
+}
+.line-three {
+}
+.line-four {
+}
+.line-five {
+}
+.main__taskbox-status {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px var(--hover-background-color);
+}
+.status__checkbox {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 10px;
+}
+.status__checkbox-toggle {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.status__checkbox-slider {
+    border-radius: 50px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: solid 1px var(--main-accent-color);
+    background-color: var(white);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.status__checkbox-slider::before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    border-radius: 40px;
+    bottom: -4px;
+    left: -1px;
+    border: solid 1px var(--main-accent-color);
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    box-shadow: 0 0 1px var(--main-accent-color);
+    }
+input:checked + .status__checkbox-slider {
+    background-color: var(--main-accent-color);
+}
+input:checked + .status__checkbox-slider::before {
+    background-color: var(--main-accent-color);
+}
+input:focus + .status__checkbox-slider {
+    box-shadow: 0 0 1px var(--main-accent-color);
+}
+input:checked + .status__checkbox-slider::before {
+    transform: translateX(14px);
+}
+.status__description {
+    font-size: 11px;
+    margin: 0;
+}
+.description {
+    padding: 0 10px;
+    margin: 5px 0;
+
+}
+.main__taskbox-titlebox {
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: 5px 1fr 10px;
+}
+.titlebox__title {
+    grid-column: 2 / 3;
+    font-size: 14px;
+    font-weight: 800;
+    margin: 0;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.titlebox__options {
+    justify-content: end;
+    grid-column: 3 / 4;
+}
+.titlebox__options-icon {
+    max-width: 14px;
+
+}
+.main__taskbox-details {
+    font-size: 9px;
+}
+.details__timeframe {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+.details__timeframe-title {
+    color: var(--first-text-color);
+}
+.details__timeframe-data {
+}
+.details__date {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+.details__date-title {
+    color: var(--first-text-color);
+}
+.details__date-data {
+}
+.details__creator {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+.details__creator-title {
+    color: var(--first-text-color);
+    display: flex;
+    align-items: center;
+}
+.details__creator-data {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.details__creator-icon {
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    height: 17px;
+    border-radius: 60px;
+    border: solid 1px var(--main-accent-color);
+    background-color: var(--hover-background-color);
+}
+.details__creator-name {
+    display: flex;
+    align-items: center;
+}
+.main__taskbox-bottom {
+    font-size: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.bottom__edit {
+    margin:  10px 10px;
+    grid-column: 1 / 2;
+}
+.bottom {
+    color: var(--main-accent-color);
+    text-align: center;
+    padding: 10px 15px;
+    background-color: var(--hover-background-color);
+}
+.bottom:hover {
+    background-color: var(--another-hover-background-color);
+}
+.bottom__edit-button {
+    }
+.bottom__progress {
+    margin: 10px 10px;
+    grid-column: 2 / 3;
+}
+.bottom__progress-button {
+    }

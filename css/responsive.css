@@ -1,0 +1,37 @@
+@media(min-width: 460px) {
+    .taskbox {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+@media(min-width: 700px) {
+    .taskbox {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .cycles {
+        display: flex;
+    }
+    .cycles__left {
+        display: flex;
+    }
+    .cycles__rigth {
+        display: flex;
+    }
+}
+@media(min-width: 844px) {
+    .taskbox {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .menu {
+        display: flex;
+    }
+}
+@media(min-width: 1200px) {
+    .taskbox {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}

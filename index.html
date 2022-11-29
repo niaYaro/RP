@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruting plan</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body id="body">
+    <header class="header">
+        <div class="header__left">
+            <a href=""><div class="header__left-title">RECRUTING<span class="header__left-span">PLAN</span></div></a>
+            <div class="header__left-menu">
+                <ul class="menu">
+                    <li class="menu__item"> <a class="menu__item-link"><img class="menu__item-logo" src="img/company-logo.png" alt=""> Company title</a></li>
+                    <li class="menu__item"><a class="menu__item-link" id="cycle" onclick="showCycles()">Planning Cycles</a></li>
+                    <li class="menu__item"><a class="menu__item-link">Dashboard</a></li>
+                    <li class="menu__item"><a class="menu__item-link">Resourcing Model</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__right">
+            <div class="header__right-icon" id="icon">UN</div>
+            <div class="header__right-name">User name</div>
+            <div class="header__right-arrow"><a href="">▼</a>
+                <img class="arrow__img" src="" alt="">
+            </div>
+        </div>
+    </header>
+    <main class="main__cycles inactive" id="main__planning-cycles-container">
+        <section class="cycles" id="cycles">
+            <div class="cycles__left">
+                <div class="cycles__left-title">Planning Cycles</div>
+                <a class="cycles__left-button">
+                    <div class="button__new" onclick="createCycles()">+ New Planning Cycle</div>
+                </a>
+            </div>
+            <div class="cycles__rigth">
+                <div class="cycles__rigth-status">
+                    <input class="cycles__rigth-active" type="checkbox"><p class="active__text">Active</p>
+                    <input class="cycles__rigth-inactive" type="checkbox"><p class="inactive__text">Inactive</p>
+                </div>
+                <div class="cycles__rigth-sort">
+                    <p class="sort__text">Sort by:</p>
+                    <select class="sort__options" name="sort" id="">
+                        <option class="sort__options-new-old" value="new-old">Newest - Oldest</option>
+                        <option class="sort__options-old-new" value="old-new">Oldest - Newest</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <section class="taskbox" id="taskbox">
+        </section>
+        <section class="new-cycle inactive" id="new-cycle">
+            <div class="new-cycle__wrapper">
+                <div class="new-cycle__wrapper-box">
+                    <div class="new-cycle__header">
+                        <p class="new-cycle__header-title">New Task</p>
+                        <div class="new-cycle__header-logo">
+                            <div class="logo__icon">+</div>
+                            <div class="logo__text">
+                                <p class="logo__text-data">Uploading logo</p>
+                                <p class="logo__text-req">jpg. jpeg. png. (max 5 mb)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="new-cycle__main" id="task-form">
+                        <div class="new-cycle__main-data">
+                            <label class="data__text">Task title<span class="necessary-data"> *</span></label>
+                            <input id="title" class="data__box" type="text" placeholder="Task title" required>
+                        </div>
+                        <div class="new-cycle__main-data">
+                            <label class="data__text">Date created</label>
+                            <input id="createdDate" class="data__box" type="date" placeholder="Date created">
+                        </div>
+                        <div class="new-cycle__main-data">
+                            <label class="data__text">Task start</label>
+                            <input id="startDate" class="data__box" type="month" placeholder="Timeframe">
+                        </div>
+                        <div class="new-cycle__main-data">
+                            <label class="data__text">Task end</label>
+                            <input id="endDate" class="data__box" type="month" placeholder="Timeframe">
+                        </div>
+                        <div class="new-cycle__main-data">
+                            <label class="data__text">Creator Name</label>
+                            <input id="creatorName" class="data__box" type="text" placeholder="Creator">
+                        </div>
+                        <div class="new-cycle__main-data">
+                            <label class="data__text">Creator Surname</label>
+                            <input id="creatorSurname" class="data__box" type="text" placeholder="Creator">
+                        </div>
+                    </form>
+                    <div class="new-cycle__main-buttons">
+                        <button class="button-cancel buttom" type="reset">Cancel</button>
+                        <button class="button-create buttom" type="submit" onclick="newTask()">Create Task</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+    </main>
+    <section class="breeds">
+        <div class="breeds__wrapper">
+            <div class="breeds__wrapper-item first-breed" id="breeds-list"></div>
+            </div>
+        <button class="breeds__wrapper-button" id="button-get">Get breeds</button>
+        <button class="breeds__wrapper-button" id="button-more">Get more breeds</button>
+    </section>
+    <!-- <script src="js/add-id-number.js"></script> -->
+    <script src="js/taskbox.js"></script>
+    <script src="js/new-cycle.js"></script>
+    <script src="js/checkbox.js"></script>
+    <script src="js/planning-cycle.js"></script>
+    <!-- <script src="js/breeds.js"></script> -->
+</body>
+</html>
