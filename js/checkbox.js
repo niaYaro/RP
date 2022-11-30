@@ -5,16 +5,14 @@
 // }
 
 const tasksStatuses = document.querySelectorAll('.description');
-function switchCheckbox() {
-    // for (let everyStatus of tasksStatuses) {
-    //     if (everyStatus.innerHTML === 'Inactive') {
-    //         everyStatus.innerHTML = 'Active'
-    //         } else everyStatus.innerHTML = 'Inactive'
-    //     }
-    for (const task of tasks) {
+function switchCheckbox(event) {
+    // This is id of the Planning cycle where click is happened
+    const id = event.target.dataset.id;
+    console.log('id - ', id);
 
-        console.log();
-    }
+    // This is value of the checkbox
+    const checked = event.target.checked;
+    console.log('checked - ', checked);
 }
 // const tasksStatuses = document.querySelectorAll('.description');
 // function switchCheckbox() {
