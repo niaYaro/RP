@@ -13,7 +13,17 @@ function switchCheckbox(event) {
     // This is value of the checkbox
     const checked = event.target.checked;
     console.log('checked - ', checked);
+    const taskId = tasks.filter(function (item) {
+        return item.id == id;
+    })
+    console.log('task id - ', taskId);
+    console.log('task status - ', taskId[0].status);
+    if (checked === true) {
+        taskId[0].status = 'Activee';
+    } else taskId[0].status = 'Inactivee';
+    // taskContainer.innerHTML = '';
 }
+// renderTast(tasks)
 // const tasksStatuses = document.querySelectorAll('.description');
 // function switchCheckbox() {
 //     for (let i = 0; i < tasksStatuses.length; i++) {

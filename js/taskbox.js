@@ -3,7 +3,7 @@
     const tasks = [
         {
             title: 'Task 12345678910111213141516171819',
-            status: 'Active',
+            status: 'wective',
             createdDate: 'Dec 8, 2022',
             startDate: 'Jan 2022',
             endDate: 'Jan 2022',
@@ -92,7 +92,7 @@
                     <input class="status__checkbox-toggle" type="checkbox" onclick="switchCheckbox(event)" data-tasktitle="${task.title}" data-id="${task.id}">
                     <span class="status__checkbox-slider"></span>
                 </label>
-                <div class="status__description"><p class="description hidden">Active</p><p class="description">Inactive</p></div>
+                <div class="status__description"><p class="description">${task.status}</p></div>
                 
             </div>
             <div class="main__taskbox-titlebox">
