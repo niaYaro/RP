@@ -65,9 +65,11 @@
     const taskContainer = document.querySelector('.taskbox');
     function renderTast(tasks) {
         for (const task of tasks) {
-            // console.log(task.target);
-            // const taskName = task.title;
-            // console.log(task);
+            let isCheckboxCHecked ='';
+            if (task.status === 'Active') {
+                isCheckboxCHecked ='checked';
+            } else {isCheckboxCHecked ='';
+            }
             taskContainer.innerHTML +=
             `<aside class="main__taskbox">
             <div class="main__taskbox-progress">
@@ -79,7 +81,13 @@
             </div>
             <div class="main__taskbox-status">
                 <label class="status__checkbox" >
-                    <input class="status__checkbox-toggle" type="checkbox" onclick="switchCheckbox(event)" data-tasktitle="${task.title}" data-id="${task.id}">
+                    <input 
+                    class="status__checkbox-toggle" 
+                    type="checkbox" 
+                    onclick="switchCheckbox(event)" 
+                    data-tasktitle="${task.title}" 
+                    data-id="${task.id}"
+                    ${isCheckboxCHecked}>
                     <span class="status__checkbox-slider"></span>
                 </label>
                 <div class="status__description"><p class="description">${task.status}</p></div>
