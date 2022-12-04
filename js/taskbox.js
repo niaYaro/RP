@@ -42,16 +42,6 @@
             icon: 'KB'
         },
         {
-            title: 'Liberate Crimea',
-            status: 'Active',
-            createdDate: 'Oct 14, 2022',
-            startDate: 'Mar 2023',
-            endDate: 'Apr 2023',
-            creatorName: 'Valeriy',
-            creatorSurname: 'Zaluzhnyi',
-            icon: 'VZ'
-        },
-        {
             title: 'Liberate Donbas',
             status: 'Active',
             createdDate: 'Oct 14, 2022',
