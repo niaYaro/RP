@@ -4,7 +4,6 @@
 //     console.log(tasks);
 // }
 
-const tasksStatuses = document.querySelectorAll('.description');
 function switchCheckbox(event) {
     // This is id of the Planning cycle where click is happened
     const id = event.target.dataset.id;
@@ -13,17 +12,18 @@ function switchCheckbox(event) {
     // This is value of the checkbox
     const checked = event.target.checked;
     console.log('checked - ', checked);
-    const taskId = tasks.filter(function (item) {
+    const currentElement = tasks.find(function (item) {
         return item.id == id;
     })
-    console.log('task id - ', taskId);
-    console.log('task status - ', taskId[0].status);
+    console.log('task object - ', currentElement);
+    console.log('task status - ', currentElement.status);
     if (checked === true) {
-        taskId[0].status = 'Activee';
-    } else taskId[0].status = 'Inactivee';
-    // taskContainer.innerHTML = '';
+        currentElement.status = 'Active';
+    } else currentElement.status = 'Inactive';
+    console.log('tasks - ', tasks);
+    taskContainer.innerHTML = '';
+    renderTast(tasks)
 }
-// renderTast(tasks)
 // const tasksStatuses = document.querySelectorAll('.description');
 // function switchCheckbox() {
 //     for (let i = 0; i < tasksStatuses.length; i++) {
