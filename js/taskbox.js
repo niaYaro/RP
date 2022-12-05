@@ -3,7 +3,7 @@
     const tasks = [
         {
             title: 'Task 12345678910111213141516171819',
-            status: 'wective',
+            status: 'Inactive',
             createdDate: 'Dec 8, 2022',
             startDate: 'Jan 2022',
             endDate: 'Jan 2022',
@@ -13,7 +13,7 @@
         },
         {
             title: 'Liberate Kherson',
-            status: 'Active',
+            status: 'Inactive',
             createdDate: 'Mar 10, 2022',
             startDate: 'Sep 2022',
             endDate: 'Nov 2022',
@@ -23,7 +23,7 @@
         },
         {
             title: 'Visit Kherson',
-            status: 'Active',
+            status: 'Inactive',
             createdDate: 'Nov 11, 2022',
             startDate: 'Nov 2022',
             endDate: 'Nov 2022',
@@ -33,7 +33,7 @@
         },
         {
             title: 'Damage the bridge',
-            status: 'Active',
+            status: 'Inactive',
             createdDate: 'Jun 28, 2022',
             startDate: 'Oct 2022',
             endDate: 'Oct 2022',
@@ -43,7 +43,7 @@
         },
         {
             title: 'Liberate Donbas',
-            status: 'Active',
+            status: 'Inactive',
             createdDate: 'Oct 14, 2022',
             startDate: 'Jan 2023',
             endDate: 'Apr 2023',
@@ -53,7 +53,7 @@
         },
         {
             title: 'Burn Moscow',
-            status: 'Active',
+            status: 'Inactive',
             createdDate: 'Aug 24, 2022',
             startDate: 'Jan 2023',
             endDate: 'Jul 2023',
@@ -95,7 +95,19 @@
             </div>
             <div class="main__taskbox-titlebox">
                 <div ><p class="titlebox__title">${task.title}</p></div>
-                <div class="titlebox__options"><a href=""><img class="titlebox__options-icon" src="img/icon-dots-vertical.png" alt=""></a></div>
+                <div class="titlebox__options" data-id="${task.id}"><a ><img class="titlebox__options-icon" src="img/icon-dots-vertical.png" alt="" data-id="${task.id}"></a></div>
+                <div class="popup hidden" data-id="${task.id}">
+                    <li class="popup__option">
+                        <div class="popup__option-wrapper">
+                            <img class="popup__option-icon" src="img/icon-edit.png" alt="">
+                            <ul class="popup__option-title">Edit</ul>
+                        </div>
+                        <div class="popup__option-wrapper">
+                            <img class="popup__option-icon" src="img/icon-delete.png" alt="">
+                            <ul class="popup__option-title">Delete</ul>
+                        </div>
+                    </li>
+                </div>
             </div>
             <div class="main__taskbox-details">
                 <div class="details__timeframe">
@@ -120,6 +132,7 @@
             </div>
         </aside>`
         }
+
     }
     function addIdNumber() {
         tasks.forEach(object => {
