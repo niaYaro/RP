@@ -1,0 +1,69 @@
+.edit {
+    background-color: rgba(41, 40, 40, 0.418);
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    height: 100%;
+}
+.edit__box {
+    z-index: 10;
+    background-color: azure;
+    position: absolute;
+    border: 1px solid black;
+    margin: auto;
+    max-width: 500px;
+    padding: 15px;
+    top: 20%;
+    left: 35%;
+}
+.edit__box-title {
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.title__edit {
+}
+.edit__box-timeframe {
+    padding-bottom: 10px;
+}
+.timeframe {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 10px;
+}
+.timeframe__start {
+}
+.timeframe__end {
+}
+.edit__box-created {
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.created__title {
+}
+.created__date {
+}
+.edit__box-creator {
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.creator__title {
+}
+.creator__date {
+}
+.edit__box-button {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.change__button {
+    grid-column: 2 / 3;
+    padding: 5px;
+    margin: auto;
+    background-color: var(--main-accent-color);
+    border: 0;
+    color: white;
+}
