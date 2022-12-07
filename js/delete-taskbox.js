@@ -4,8 +4,15 @@ allDeleteButton.forEach(activeDeleteButton => activeDeleteButton.addEventListene
 function deleteTaskbox (event) {
     const allTaskBoxArray = Array.from(allTaskBox);
     const id = event.target.dataset.id;
-    const taskThatShouldBeDelete = allTaskBoxArray.find(function (item) {
-        return id === item.dataset.id;
+    // const taskThatShouldBeDelete = allTaskBoxArray.find(function (item) {
+    //     return id === item.dataset.id;
+    // })
+    console.log('tasks', tasks);
+    const deletedTask = tasks.find(function (task) {
+        return id == task.id;
     })
-    taskThatShouldBeDelete.classList.toggle('hidden')
+    const indexOfDeletingTask = tasks.indexOf(deletedTask);
+    tasks.splice(indexOfDeletingTask, 1)
+    taskContainer.innerHTML = '';
+    renderTast(tasks)
 }
