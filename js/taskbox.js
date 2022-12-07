@@ -70,7 +70,7 @@
             } else {isCheckboxCHecked ='';
             }
             taskContainer.innerHTML +=
-            `<aside class="main__taskbox">
+            `<aside class="main__taskbox" data-id="${task.id}">
             <div class="main__taskbox-progress">
                 <div class="main__taskbox-progressline line line-one"></div>
                 <div class="main__taskbox-progressline line line-two"></div>
@@ -103,7 +103,7 @@
                         </div>
                         <div class="popup__option-wrapper delete-option">
                             <img class="popup__option-icon" src="img/icon-delete.png" alt="">
-                            <ul class="popup__option-title">Delete</ul>
+                            <ul class="popup__option-title" data-id="${task.id}">Delete</ul>
                         </div>
                     </li>
                 </div>
