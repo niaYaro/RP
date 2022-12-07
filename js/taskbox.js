@@ -132,12 +132,12 @@
         </aside>
         <section class="edit hidden" data-id="${task.id}">
         <div class="edit__box">
-            <div class="edit__box-title">
+            <div class="edit__box-title" data-id="${task.id}">
                 <input class="title__edit" type="text" placeholder="New title" value="${task.title}">
             </div>
             <div class="edit__box-timeframe">
-                <div class="timeframe"><input class="timeframe__start" type="month" placeholder="New title" value="${task.startDate}"></div>
-                <div class="timeframe"><input class="timeframe__end" type="month" placeholder="New title" value="${task.endDate}"></div>
+                <div class="timeframe"><input class="timeframe__start" data-id="${task.id}" type="month" placeholder="New title" value="${task.startDate}"></div>
+                <div class="timeframe"><input class="timeframe__end" data-id="${task.id}" type="month" placeholder="New title" value="${task.endDate}"></div>
             </div>
             <div class="edit__box-created" title="Data are not changeable">
                 <p class="created__title">Date created:</p> 
@@ -148,7 +148,7 @@
                 <p class="creator__date">${task.creatorName} ${task.creatorSurname}</p>
             </div>
             <div class="edit__box-button">
-                <button class="change__button">Save changes</button>
+                <button class="change__button" data-id="${task.id}">Save changes</button>
             </div>
         </div>
     </section>`

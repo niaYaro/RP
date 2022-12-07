@@ -8,5 +8,5 @@ function editTask(event) {
     const currentBox = editBoxArray.find(function (item) {
         return id === item.dataset.id
     })
-    currentBox.classList.toggle('hidden')
+    currentBox.classList.toggle('hidden');
 }
