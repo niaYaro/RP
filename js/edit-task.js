@@ -1,7 +1,6 @@
 const listOfEditButtons = document.querySelectorAll('.edit-option');
 listOfEditButtons.forEach(currentEditButton => currentEditButton.addEventListener('click', editTask))
-const listOfEditBox = document.querySelectorAll('.edit')
-console.log('list', listOfEditButtons);
+const listOfEditBox = document.querySelectorAll('.edit');
 const body = document.getElementById('body')
 function editTask(event) {
     const id = event.target.dataset.id;
@@ -10,8 +9,4 @@ function editTask(event) {
         return id === item.dataset.id
     })
     currentBox.classList.toggle('hidden')
-    // body.classList.toggle('inactive-background')
-    // console.log('click')
-    // console.log(listOfEditBox)
-    // console.log(id)
 }

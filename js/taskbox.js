@@ -1,4 +1,3 @@
-// function taskbox() {
     let idNumber = 0;
     const tasks = [
         {
@@ -163,8 +162,5 @@
         })
     }
     addIdNumber();
-    console.log('tasks', tasks);
     renderTast(tasks);
-// }
-// taskbox();
 
