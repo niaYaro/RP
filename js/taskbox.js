@@ -1,5 +1,6 @@
     let idNumber = 0;
-    const tasks = [
+    
+    let tasks = [
         {
             title: 'Task 12345678910111213141516171819',
             status: 'Inactive',
@@ -7,8 +8,7 @@
             startDate: '2022-06',
             endDate: '2023-01',
             creatorName: 'Bohdan',
-            creatorSurname: 'Vitrovyi',
-            icon: ``
+            creatorSurname: 'Vitrovyi'
         },
         {
             title: 'Liberate Kherson',
@@ -17,8 +17,7 @@
             startDate: '2022-09',
             endDate: '2022-11',
             creatorName: 'Valeriy',
-            creatorSurname: 'Zaluzhnyi',
-            icon: 'VZ'
+            creatorSurname: 'Zaluzhnyi'
         },
         {
             title: 'Visit Kherson',
@@ -27,8 +26,7 @@
             startDate: '2022-11',
             endDate: '2022-11',
             creatorName: 'Volodymyr',
-            creatorSurname: 'Zelenskyi',
-            icon: 'VZ'
+            creatorSurname: 'Zelenskyi'
         },
         {
             title: 'Damage the bridge',
@@ -37,8 +35,7 @@
             startDate: '2022-10',
             endDate: '2022-10',
             creatorName: 'Kyrylo',
-            creatorSurname: 'Budanov',
-            icon: 'KB'
+            creatorSurname: 'Budanov'
         },
         {
             title: 'Liberate Donbas',
@@ -47,8 +44,7 @@
             startDate: '2023-01',
             endDate: '2023-04',
             creatorName: 'Valeriy',
-            creatorSurname: 'Zaluzhnyi',
-            icon: 'VZ'
+            creatorSurname: 'Zaluzhnyi'
         },
         {
             title: 'Burn Moscow',
@@ -57,10 +53,12 @@
             startDate: '2023-01',
             endDate: '2023-07',
             creatorName: 'Oleksiy',
-            creatorSurname: 'Danilov',
-            icon: 'OD'
+            creatorSurname: 'Danilov'
         },
     ]
+    console.log(localStorage)
+    // console.log(tasks)
+    // console.log(JSON.stringify(tasks))
     const taskContainer = document.querySelector('.taskbox');
     function renderTast(tasks) {
         for (const task of tasks) {

@@ -6,6 +6,9 @@
     max-width: 280px;
     min-width: 210px;
 }
+.color-changer {
+    background-color: pink;
+}
 .main__taskbox-progress {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
