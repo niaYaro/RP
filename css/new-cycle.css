@@ -4,12 +4,13 @@
     margin: auto;
     width: 100%;
     top: 0;
+    z-index: 100;
     height: 100%;
 }
 .new-cycle__wrapper {
     background-color: white;
-    margin: 10% 35%;
-    padding: 10px 20px;
+    margin: 5% 35%;
+    padding: 20px 20px;
     min-width: 250px;
     border-radius: 3px;
 }
@@ -18,9 +19,9 @@
 .new-cycle__header {
 }
 .new-cycle__header-title {
-    margin: 5px 0;
-    font-size: 12px;
-    font-weight: 800;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 .new-cycle__header-logo {
     display: grid;
@@ -51,7 +52,7 @@
 .new-cycle__main {
 }
 .new-cycle__main-data {
-    margin: 10px 0;
+    padding-bottom: 10px;
     display: grid;
     grid-template-columns: 1fr;
 }
