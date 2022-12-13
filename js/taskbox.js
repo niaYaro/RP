@@ -150,7 +150,8 @@
             </div>
         </div>
     </section>`
-        }
+    addEventListenerToPopUp()
+}
 
     }
     function addIdNumber() {
