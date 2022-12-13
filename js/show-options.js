@@ -13,7 +13,6 @@ function addEventListenerToPopUp() {
     const listOfEditButtons = document.querySelectorAll('.edit-option');
     listOfEditButtons.forEach(currentEditButton => currentEditButton.addEventListener('click', editTask))
     const listOfEditBox = document.querySelectorAll('.edit');
-    // const body = document.getElementById('body')
     function editTask(event) {
         const id = event.target.dataset.id;
         const editBoxArray = Array.from(listOfEditBox)
@@ -54,7 +53,6 @@ function saveData (event) {
     renderTast(tasks)
 }
 const allDeleteButton = document.querySelectorAll('.delete-option');
-const allTaskBox = document.querySelectorAll('.main__taskbox');
 allDeleteButton.forEach(activeDeleteButton => activeDeleteButton.addEventListener('click', deleteTaskbox));
 function deleteTaskbox (event) {
     const id = event.target.dataset.id;
