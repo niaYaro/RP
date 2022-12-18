@@ -56,9 +56,6 @@
             creatorSurname: 'Danilov'
         },
     ]
-    console.log(localStorage)
-    // console.log(tasks)
-    // console.log(JSON.stringify(tasks))
     const taskContainer = document.querySelector('.taskbox');
     function renderTast(tasks) {
         for (const task of tasks) {
@@ -150,7 +147,8 @@
             </div>
         </div>
     </section>`
-        }
+    addEventListenerToPopUp()
+}
 
     }
     function addIdNumber() {

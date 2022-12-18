@@ -8,15 +8,11 @@
     height: 100%;
 }
 .edit__box {
-    z-index: 10;
-    background-color: azure;
-    position: absolute;
-    border: 1px solid black;
-    margin: auto;
-    max-width: 500px;
-    padding: 15px;
-    top: 20%;
-    left: 35%;
+    background-color: white;
+    margin: 10% 35%;
+    padding: 20px 20px;
+    min-width: 250px;
+    border-radius: 3px;
 }
 .edit__box-title {
     padding-bottom: 10px;
