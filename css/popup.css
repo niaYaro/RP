@@ -1,0 +1,26 @@
+.popup {
+background-color: white;
+padding: 5px 20px;
+border-radius: 3px;
+box-shadow: 0px 0px 5px var(--first-text-color);
+position: absolute;
+right: -65px;
+top: 20px;
+}
+.popup__option {
+    margin: auto;
+    padding: 0;
+}
+.popup__option-wrapper {
+    display: flex;
+    padding: 5px;
+    cursor: pointer;
+}
+.popup__option-icon {
+    max-width: 20px;
+}
+.popup__option-title {
+    margin: 0;
+    padding: 0 0 0 5px;
+    text-align: center;
+}

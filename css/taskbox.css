@@ -1,7 +1,4 @@
 .taskbox {
-    /* display: none; */
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
 }
 .main__taskbox {
     background-color: white;
@@ -95,6 +92,7 @@ input:checked + .status__checkbox-slider::before {
 
 }
 .main__taskbox-titlebox {
+    position: relative;
     padding: 0 10px;
     display: grid;
     grid-template-columns: 5px 1fr 10px;
@@ -110,6 +108,7 @@ input:checked + .status__checkbox-slider::before {
     text-overflow: ellipsis;
 }
 .titlebox__options {
+    cursor: pointer;
     justify-content: end;
     grid-column: 3 / 4;
 }

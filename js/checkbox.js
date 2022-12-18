@@ -1,9 +1,3 @@
-// function switchCheckbox() {
-//     const title = task.target.dataset.tasktitle;
-//     console.log('title', title);
-//     console.log(tasks);
-// }
-
 function switchCheckbox(event) {
     // This is id of the Planning cycle where click is happened
     const id = event.target.dataset.id;
