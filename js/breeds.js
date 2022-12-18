@@ -9,7 +9,6 @@ function renderPage() {
     const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
         if (xhr.readyState == 4 && xhr.status == 200) {
-           // Typical action to be performed when the document is ready:
             const breedsJson = JSON.parse(xhr.responseText)
             console.log(breedsJson);
             for (let i = 0; i < breedsJson.data.length; i++) {

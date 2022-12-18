@@ -49,7 +49,6 @@
 .logo__text-req {
 }
 .new-cycle__main {
-    /* padding: 20px; */
 }
 .new-cycle__main-data {
     margin: 10px 0;
@@ -68,21 +67,14 @@
 .data__box {
     border: 1px solid rgb(216, 214, 214);
     border-radius: 2px;
-    /* color: blueviolet; */
-    /* margin: 0 5px; */
-    /* width: 90%; */
-    /* color: rebeccapurple; */
 }
 .data__box-option {
-    /* color: yellowgreen; */
 }
 .new-cycle__main-buttons {
-    /* margin: 20px 0; */
     display: grid;
     grid-template-columns: 1fr 3fr 2fr;
 }
 .buttom {
-    /* padding: 10px 0; */
     padding: 5px;
     font-size: 10px;
     font-size: 10px;

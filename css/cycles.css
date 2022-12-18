@@ -67,7 +67,6 @@
 .cycles__rigth-sort {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
 }
 .sort__text {
     padding: 0 10px;
