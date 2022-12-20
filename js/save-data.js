@@ -8,7 +8,10 @@ function saveDataInLocalStorage () {
 function takeDataInLocalStorage() {
     const savedData = JSON.parse(window.localStorage.getItem('allTasks'));
     tasks = savedData;
-    taskContainer.innerHTML = '';
-    renderTast(tasks);
+
+    if (tasks && tasks.length > 0) {
+        taskContainer.innerHTML = '';
+        renderTast(tasks);
+    }
 }
 takeDataInLocalStorage()

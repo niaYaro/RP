@@ -126,13 +126,37 @@
             </div>
         </aside>
         <section class="edit hidden" data-id="${task.id}">
-        <div class="edit__box">
+        <form class="edit__box" id="pc-form-${task.id}">
             <div class="edit__box-title" data-id="${task.id}">
-                <input class="title__edit" type="text" placeholder="New title" value="${task.title}">
+                <input 
+                  class="title__edit" 
+                  type="text" 
+                  placeholder="New title" 
+                  value="${task.title}"
+                  name="title"
+                >
             </div>
             <div class="edit__box-timeframe">
-                <div class="timeframe"><input class="timeframe__start" data-id="${task.id}" type="month" placeholder="New title" value="${task.startDate}"></div>
-                <div class="timeframe"><input class="timeframe__end" data-id="${task.id}" type="month" placeholder="New title" value="${task.endDate}"></div>
+                <div class="timeframe">
+                  <input 
+                    class="timeframe__start" 
+                    data-id="${task.id}" 
+                    type="month" 
+                    placeholder="New title" 
+                    value="${task.startDate}"
+                    name="startDate"
+                  >
+                </div>
+                <div class="timeframe">
+                  <input 
+                    class="timeframe__end"
+                    data-id="${task.id}"
+                    type="month" 
+                    placeholder="New title"
+                    value="${task.endDate}"
+                    name="endDate"
+                  >
+                </div>
             </div>
             <div class="edit__box-created" title="Data are not changeable">
                 <p class="created__title">Date created:</p> 
@@ -145,7 +169,7 @@
             <div class="edit__box-button">
                 <button class="change__button" data-id="${task.id}">Save changes</button>
             </div>
-        </div>
+        </form>
     </section>`
     addEventListenerToPopUp()
 }
