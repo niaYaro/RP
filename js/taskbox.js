@@ -1,62 +1,60 @@
-    let idNumber = 0;
-    
-    let tasks = [
-        {
-            title: 'Task 12345678910111213141516171819',
-            status: 'Inactive',
-            createdDate: 'Dec 8, 2022',
-            startDate: '2022-06',
-            endDate: '2023-01',
-            creatorName: 'Bohdan',
-            creatorSurname: 'Vitrovyi'
-        },
-        {
-            title: 'Liberate Kherson',
-            status: 'Inactive',
-            createdDate: 'Mar 10, 2022',
-            startDate: '2022-09',
-            endDate: '2022-11',
-            creatorName: 'Valeriy',
-            creatorSurname: 'Zaluzhnyi'
-        },
-        {
-            title: 'Visit Kherson',
-            status: 'Inactive',
-            createdDate: 'Nov 11, 2022',
-            startDate: '2022-11',
-            endDate: '2022-11',
-            creatorName: 'Volodymyr',
-            creatorSurname: 'Zelenskyi'
-        },
-        {
-            title: 'Damage the bridge',
-            status: 'Inactive',
-            createdDate: 'Jun 28, 2022',
-            startDate: '2022-10',
-            endDate: '2022-10',
-            creatorName: 'Kyrylo',
-            creatorSurname: 'Budanov'
-        },
-        {
-            title: 'Liberate Donbas',
-            status: 'Inactive',
-            createdDate: 'Oct 14, 2022',
-            startDate: '2023-01',
-            endDate: '2023-04',
-            creatorName: 'Valeriy',
-            creatorSurname: 'Zaluzhnyi'
-        },
-        {
-            title: 'Burn Moscow',
-            status: 'Inactive',
-            createdDate: 'Aug 24, 2022',
-            startDate: '2023-01',
-            endDate: '2023-07',
-            creatorName: 'Oleksiy',
-            creatorSurname: 'Danilov'
-        },
-    ]
-    const taskContainer = document.querySelector('.taskbox');
+let tasks = [
+    {
+        title: 'Task 12345678910111213141516171819',
+        status: 'Inactive',
+        createdDate: 'Dec 8, 2022',
+        startDate: '2022-06',
+        endDate: '2023-01',
+        creatorName: 'Bohdan',
+        creatorSurname: 'Vitrovyi'
+    },
+    {
+        title: 'Liberate Kherson',
+        status: 'Inactive',
+        createdDate: 'Mar 10, 2022',
+        startDate: '2022-09',
+        endDate: '2022-11',
+        creatorName: 'Valeriy',
+        creatorSurname: 'Zaluzhnyi'
+    },
+    {
+        title: 'Visit Kherson',
+        status: 'Inactive',
+        createdDate: 'Nov 11, 2022',
+        startDate: '2022-11',
+        endDate: '2022-11',
+        creatorName: 'Volodymyr',
+        creatorSurname: 'Zelenskyi'
+    },
+    {
+        title: 'Damage the bridge',
+        status: 'Inactive',
+        createdDate: 'Jun 28, 2022',
+        startDate: '2022-10',
+        endDate: '2022-10',
+        creatorName: 'Kyrylo',
+        creatorSurname: 'Budanov'
+    },
+    {
+        title: 'Liberate Donbas',
+        status: 'Inactive',
+        createdDate: 'Oct 14, 2022',
+        startDate: '2023-01',
+        endDate: '2023-04',
+        creatorName: 'Valeriy',
+        creatorSurname: 'Zaluzhnyi'
+    },
+    {
+        title: 'Burn Moscow',
+        status: 'Inactive',
+        createdDate: 'Aug 24, 2022',
+        startDate: '2023-01',
+        endDate: '2023-07',
+        creatorName: 'Oleksiy',
+        creatorSurname: 'Danilov'
+    },
+]
+const taskContainer = document.querySelector('.taskbox');
     function renderTast(tasks) {
         for (const task of tasks) {
             let isCheckboxCHecked ='';
@@ -126,13 +124,36 @@
             </div>
         </aside>
         <section class="edit hidden" data-id="${task.id}">
-        <div class="edit__box">
+        <form class="edit__box" id="pc-form-${task.id}">
             <div class="edit__box-title" data-id="${task.id}">
-                <input class="title__edit" type="text" placeholder="New title" value="${task.title}">
+                <input 
+                class="title__edit" 
+                name="title" 
+                type="text" 
+                placeholder="New title" 
+                value="${task.title}">
             </div>
             <div class="edit__box-timeframe">
-                <div class="timeframe"><input class="timeframe__start" data-id="${task.id}" type="month" placeholder="New title" value="${task.startDate}"></div>
-                <div class="timeframe"><input class="timeframe__end" data-id="${task.id}" type="month" placeholder="New title" value="${task.endDate}"></div>
+                <div class="timeframe">
+                    <input 
+                        class="timeframe__start" 
+                        name="start" 
+                        data-id="${task.id}" 
+                        type="month" 
+                        placeholder="New title" 
+                        value="${task.startDate}"
+                    >
+                </div>
+                <div class="timeframe">
+                    <input 
+                        class="timeframe__end" 
+                        name="end" 
+                        data-id="${task.id}" 
+                        type="month" 
+                        placeholder="New title" 
+                        value="${task.endDate}"
+                    >
+                </div>
             </div>
             <div class="edit__box-created" title="Data are not changeable">
                 <p class="created__title">Date created:</p> 
@@ -143,15 +164,18 @@
                 <p class="creator__date">${task.creatorName} ${task.creatorSurname}</p>
             </div>
             <div class="edit__box-button">
-                <button class="change__button" data-id="${task.id}">Save changes</button>
+                <button class="change__button" type="button" data-id="${task.id}">Save changes</button>
             </div>
-        </div>
+        </form>
     </section>`
     addEventListenerToPopUp()
 }
 
     }
     function addIdNumber() {
+        let idNumber = 0;
+        const tasksIdArray = tasks.map(task => task.id)
+        // console.log("tasks Id Array", tasksIdArray)
         tasks.forEach(object => {
             object.id = idNumber + 1;
             idNumber++;

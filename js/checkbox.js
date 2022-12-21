@@ -5,6 +5,7 @@ function switchCheckbox(event) {
     const currentElement = tasks.find(function (item) {
         return item.id == id;
     })
+    console.log('currentelement', currentElement)
     if (checked === true) {
         currentElement.status = 'Active';
     } else currentElement.status = 'Inactive';
