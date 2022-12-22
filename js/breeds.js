@@ -4,6 +4,7 @@ buttonMore.disabled = true;
 let breedsList = document.getElementById('breeds-list');
 let quantityOnThePage = 5;
 let pageNumber = 0;
+
 function renderPage() {
     pageNumber ++;
     const xhr = new XMLHttpRequest();

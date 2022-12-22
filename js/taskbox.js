@@ -55,7 +55,8 @@ let tasks = [
     },
 ]
 const taskContainer = document.querySelector('.taskbox');
-    function renderTast(tasks) {
+    
+function renderTast(tasks) {
         for (const task of tasks) {
             let isCheckboxCHecked ='';
             if (task.status === 'Active') {
@@ -129,15 +130,16 @@ const taskContainer = document.querySelector('.taskbox');
 
 
     }
-    function addIdNumber() {
-        let idNumber = 0;
-        const tasksIdArray = tasks.map(task => task.id)
-        // console.log("tasks Id Array", tasksIdArray)
-        tasks.forEach(object => {
-            object.id = idNumber + 1;
-            idNumber++;
-        })
-    }
-    addIdNumber();
-    renderTast(tasks);
+    
+function addIdNumber() {
+    let idNumber = 0;
+    const tasksIdArray = tasks.map(task => task.id)
+    // console.log("tasks Id Array", tasksIdArray)
+    tasks.forEach(object => {
+        object.id = idNumber + 1;
+        idNumber++;
+    })
+}
+addIdNumber();
+renderTast(tasks);
 

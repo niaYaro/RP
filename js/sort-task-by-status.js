@@ -2,6 +2,7 @@ const activeFilterBox = document.querySelector('.cycles__rigth-active');
 const inactiveFilterBox = document.querySelector('.cycles__rigth-inactive');
 activeFilterBox.addEventListener('click', filteredByActiveStatus)
 inactiveFilterBox.addEventListener('click', filteredByInactiveStatus)
+
 function filteredByActiveStatus() {
     const tasksWithActiveStatus = tasks.filter(function (task){
         return task.status === 'Active';
@@ -16,6 +17,7 @@ function filteredByActiveStatus() {
         renderTast(tasks);
     }
 }
+
 function filteredByInactiveStatus() {
     const tasksWithInactiveStatus = tasks.filter(function (task){
         return task.status === 'Inactive';

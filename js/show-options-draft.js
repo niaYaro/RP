@@ -2,6 +2,7 @@ function addEventListenerToPopUp() {
     const optionButton = document.querySelectorAll('.titlebox__options');
     const popUpOfOptions = document.querySelectorAll('.popup');
     optionButton.forEach(currentOptionButton => currentOptionButton.addEventListener('click', showPopUp));
+    
     function showPopUp(event) {
         const currentPopUpArray = Array.from(popUpOfOptions)
         const id = event.target.dataset.id;
@@ -12,6 +13,7 @@ function addEventListenerToPopUp() {
     }
     const listOfEditButtons = document.querySelectorAll('.edit-option');
     listOfEditButtons.forEach(currentEditButton => currentEditButton.addEventListener('click', editTask))
+    
     function editTask(event) {
         const listOfEditBox = document.querySelector('.edit');
         const id = event.target.dataset.id;
@@ -70,6 +72,7 @@ function addEventListenerToPopUp() {
             </form>`;
             const changeDataButton = document.querySelector('.change__button');
             changeDataButton.addEventListener('click', saveData);
+            
             function saveData (event) {
                 const id = event.target.dataset.id;
                 const dataFromForm = new FormData(document.getElementById('pc-form'));
@@ -89,6 +92,7 @@ function addEventListenerToPopUp() {
     }
 const allDeleteButton = document.querySelectorAll('.delete-option');
 allDeleteButton.forEach(activeDeleteButton => activeDeleteButton.addEventListener('click', deleteTaskbox));
+
 function deleteTaskbox (event) {
     const id = event.target.dataset.id;
     const deletedTask = tasks.find(function (task) {
