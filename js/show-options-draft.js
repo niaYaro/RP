@@ -22,6 +22,7 @@ function addEventListenerToPopUp() {
             const editTask = tasks.find(function (task) {
                 return id == task.id
             })
+            editBox.innerHTML = ''; 
             editBox.innerHTML += 
             `<form 
             class="edit__box" 
