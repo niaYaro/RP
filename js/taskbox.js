@@ -123,53 +123,10 @@ const taskContainer = document.querySelector('.taskbox');
                 <a class="bottom__progress" href=""><div class="bottom__progress-button bottom">Hiring Progress</div></a>
             </div>
         </aside>
-        <section class="edit hidden" data-id="${task.id}">
-        <form class="edit__box" id="pc-form-${task.id}">
-            <div class="edit__box-title" data-id="${task.id}">
-                <input 
-                class="title__edit" 
-                name="title" 
-                type="text" 
-                placeholder="New title" 
-                value="${task.title}">
-            </div>
-            <div class="edit__box-timeframe">
-                <div class="timeframe">
-                    <input 
-                        class="timeframe__start" 
-                        name="start" 
-                        data-id="${task.id}" 
-                        type="month" 
-                        placeholder="New title" 
-                        value="${task.startDate}"
-                    >
-                </div>
-                <div class="timeframe">
-                    <input 
-                        class="timeframe__end" 
-                        name="end" 
-                        data-id="${task.id}" 
-                        type="month" 
-                        placeholder="New title" 
-                        value="${task.endDate}"
-                    >
-                </div>
-            </div>
-            <div class="edit__box-created" title="Data are not changeable">
-                <p class="created__title">Date created:</p> 
-                <p class="created__date">${task.createdDate}</p>
-            </div>
-            <div class="edit__box-creator" title="Data are not changeable">
-                <p class="creator__title">Creator name:</p> 
-                <p class="creator__date">${task.creatorName} ${task.creatorSurname}</p>
-            </div>
-            <div class="edit__box-button">
-                <button class="change__button" type="button" data-id="${task.id}">Save changes</button>
-            </div>
-        </form>
-    </section>`
+        `
     addEventListenerToPopUp()
 }
+
 
     }
     function addIdNumber() {
