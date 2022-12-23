@@ -19,8 +19,6 @@
     display: grid;
     grid-template-columns: 1fr;
 }
-.title__edit {
-}
 .edit__box-timeframe {
     padding-bottom: 10px;
 }
@@ -29,27 +27,15 @@
     grid-template-columns: 1fr;
     padding-bottom: 10px;
 }
-.timeframe__start {
-}
-.timeframe__end {
-}
 .edit__box-created {
     padding-bottom: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.created__title {
-}
-.created__date {
-}
 .edit__box-creator {
     padding-bottom: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-.creator__title {
-}
-.creator__date {
 }
 .edit__box-button {
     display: grid;
