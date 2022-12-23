@@ -134,7 +134,6 @@ function renderTast(tasks) {
 function addIdNumber() {
     let idNumber = 0;
     const tasksIdArray = tasks.map(task => task.id)
-    // console.log("tasks Id Array", tasksIdArray)
     tasks.forEach(object => {
         object.id = idNumber + 1;
         idNumber++;
