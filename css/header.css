@@ -8,7 +8,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .header__left-title {
     padding: 15px;
@@ -19,8 +18,6 @@
 }
 .header__left-span {
     color: var(--second-text-color);
-}
-.header__left-menu {
 }
 .menu {
     color: var(--first-text-color);
@@ -51,15 +48,10 @@
 }
 .menu__item-link {
     display: flex;
-
 }
 .menu__item-logo {
     width: 20px;
     padding: 0 5px;
-}
-.menu__item-img {
-}
-.menu__img {
 }
 .header__right {
     padding: 15px 10px 13px 10px;
@@ -91,8 +83,6 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-}
-.arrow__img {
 }
 .mystyle {
     background-color: aqua;

@@ -1,5 +1,3 @@
-.taskbox {
-}
 .main__taskbox {
     background-color: white;
     margin: 10px;
@@ -13,21 +11,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-.main__taskbox-progressline {
-}
 .line {
     border-top: solid 4px var(--progress-color);
-
-}
-.line-one {
-}
-.line-two {
-}
-.line-three {
-}
-.line-four {
-}
-.line-five {
 }
 .main__taskbox-status {
     padding: 0 10px;
@@ -92,7 +77,6 @@ input:checked + .status__checkbox-slider::before {
 .description {
     padding: 0 10px;
     margin: 5px 0;
-
 }
 .main__taskbox-titlebox {
     position: relative;
@@ -117,7 +101,6 @@ input:checked + .status__checkbox-slider::before {
 }
 .titlebox__options-icon {
     max-width: 14px;
-
 }
 .main__taskbox-details {
     font-size: 9px;
@@ -131,8 +114,6 @@ input:checked + .status__checkbox-slider::before {
 .details__timeframe-title {
     color: var(--first-text-color);
 }
-.details__timeframe-data {
-}
 .details__date {
     padding: 5px;
     display: grid;
@@ -141,8 +122,6 @@ input:checked + .status__checkbox-slider::before {
 }
 .details__date-title {
     color: var(--first-text-color);
-}
-.details__date-data {
 }
 .details__creator {
     padding: 5px;
@@ -192,11 +171,7 @@ input:checked + .status__checkbox-slider::before {
 .bottom:hover {
     background-color: var(--another-hover-background-color);
 }
-.bottom__edit-button {
-    }
 .bottom__progress {
     margin: 10px 10px;
     grid-column: 2 / 3;
 }
-.bottom__progress-button {
-    }

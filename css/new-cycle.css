@@ -14,10 +14,6 @@
     min-width: 250px;
     border-radius: 3px;
 }
-.new-cycle__wrapper-box {
-}
-.new-cycle__header {
-}
 .new-cycle__header-title {
     padding-bottom: 10px;
     display: grid;
@@ -47,10 +43,6 @@
     font-weight: 700;
     font-size: 12px;
 }
-.logo__text-req {
-}
-.new-cycle__main {
-}
 .new-cycle__main-data {
     padding-bottom: 10px;
     display: grid;
@@ -68,8 +60,6 @@
 .data__box {
     border: 1px solid rgb(216, 214, 214);
     border-radius: 2px;
-}
-.data__box-option {
 }
 .new-cycle__main-buttons {
     display: grid;
