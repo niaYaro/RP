@@ -52,6 +52,7 @@ function renderPage() {
 
 
 
+
 // async function renderAnotherPage() {
 //     pageNumber ++;    
 //     const response = await fetch(`https://catfact.ninja/breeds?limit=${quantityOnThePage}&page=${pageNumber}`);

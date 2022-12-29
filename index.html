@@ -53,54 +53,7 @@
         <section class="taskbox" id="taskbox">
         </section>
         <section class="new-cycle inactive" id="new-cycle">
-            <div class="new-cycle__wrapper">
-                <div class="new-cycle__wrapper-box">
-                    <div class="new-cycle__header">
-                        <p class="new-cycle__header-title">New Task</p>
-                        <div class="new-cycle__header-logo">
-                            <div class="logo__icon">+</div>
-                            <div class="logo__text">
-                                <p class="logo__text-data">Uploading logo</p>
-                                <p class="logo__text-req">jpg. jpeg. png. (max 5 mb)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <form class="new-cycle__main" id="task-form">
-                        <div class="new-cycle__main-data">
-                            <label class="data__text">Task title<span class="necessary-data"> *</span></label>
-                            <input id="title" class="data__box" type="text" placeholder="Task title" required title="No russian language">
-                        </div>
-                        <div class="new-cycle__main-data">
-                            <label class="data__text">Date created</label>
-                            <input id="createdDate" class="data__box" type="date" placeholder="Date created">
-                        </div>
-                        <div class="new-cycle__main-data">
-                            <label class="data__text">Task start</label>
-                            <input id="startDate" class="data__box" type="month" placeholder="Timeframe">
-                        </div>
-                        <div class="new-cycle__main-data">
-                            <label class="data__text">Task end</label>
-                            <input id="endDate" class="data__box" type="month" placeholder="Timeframe">
-                        </div>
-                        <div class="new-cycle__main-data">
-                            <label class="data__text">Creator Name</label>
-                            <input id="creatorName" class="data__box" type="text" placeholder="Creator">
-                        </div>
-                        <div class="new-cycle__main-data">
-                            <label class="data__text">Creator Surname</label>
-                            <input id="creatorSurname" class="data__box" type="text" placeholder="Creator">
-                        </div>
-                        <div class="hidden">
-                            <label class="data__text">Creator Surname</label>
-                            <input id="status" class="data__box" type="text" placeholder="Status" value="Active">
-                        </div>
-                    </form>
-                    <div class="new-cycle__main-buttons">
-                        <button class="button-cancel buttom" type="reset">Cancel</button>
-                        <button class="button-create buttom" type="submit" onclick="newTask()">Create Task</button>
-                    </div>
-                </div>
-            </div>
+            
         </section>
         <section class="edit hidden" id="edit-box">
         
@@ -139,6 +92,7 @@
     <script src="js/new-cycle.js"></script>
     <script src="js/checkbox.js"></script>
     <script src="js/planning-cycle.js"></script>
+    <script src="js/form-view.js"></script>
     <script src="js/change-box-color.js"></script>
     <!-- <script src="js/breeds.js"></script> -->
 </body>

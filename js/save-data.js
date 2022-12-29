@@ -7,8 +7,8 @@ function saveDataInLocalStorage () {
 
 function takeDataInLocalStorage() {
     const savedData = JSON.parse(localStorage.getItem('allTasks'));
-    tasks = savedData;
-    if (tasks && tasks.length > 0) {
+    if (savedData && savedData.length) {
+        tasks = savedData;
         taskContainer.innerHTML = '';
         renderTast(tasks);
     }
